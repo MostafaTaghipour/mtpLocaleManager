@@ -1,0 +1,15 @@
+
+/* Class = "UIViewController"; title = "Settings"; ObjectID = "3aA-YK-auC"; */
+"3aA-YK-auC.title" = "تنظیمات";
+
+/* Class = "UIBarButtonItem"; title = "settings"; ObjectID = "bLg-fq-Au1"; */
+"bLg-fq-Au1.title" = "تنظیمات";
+
+/* Class = "UILabel"; text = "Language:"; ObjectID = "fmk-nY-OYm"; */
+"fmk-nY-OYm.text" = "زبان:";
+
+/* Class = "UINavigationItem"; title = "Main"; ObjectID = "sbS-wd-nQc"; */
+"sbS-wd-nQc.title" = "صفحه اصلی";
+
+/* Class = "UILabel"; text = "This is localized string"; ObjectID = "yEA-e2-RdQ"; */
+"yEA-e2-RdQ.text" = "This is localized string";

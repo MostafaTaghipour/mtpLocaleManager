@@ -1,0 +1,6 @@
+framework module Pods_mtpLocaleManager_Example {
+  umbrella header "Pods-mtpLocaleManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module mtpLocaleManager {
+  umbrella header "mtpLocaleManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

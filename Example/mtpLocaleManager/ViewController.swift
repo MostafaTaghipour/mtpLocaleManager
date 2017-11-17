@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import mtpLocaleManager
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageview: UIImageView!
+    @IBOutlet weak var localizedLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        localizedLabel.text=NSLocalizedString("label_title", comment: "label")
+        self.imageview.image=UIImage(named: LocaleManager.shared.currentLocale=="fa" ? "iran.png" : "usa.png")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
 }

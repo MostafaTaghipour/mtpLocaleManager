@@ -15,6 +15,10 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C4237FFB4D37769DC810F117 /* Pods_mtpLocaleManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051B32ED3957CB6A954C35AC /* Pods_mtpLocaleManager_Tests.framework */; };
 		D1A4AD084E3A2522FD57872F /* Pods_mtpLocaleManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B964119FA66406A8D6EBC /* Pods_mtpLocaleManager_Example.framework */; };
+		DAE305331FBF14CA00FC5AE8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE305321FBF14CA00FC5AE8 /* SettingsViewController.swift */; };
+		DAE305361FBF15EF00FC5AE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE305381FBF15EF00FC5AE8 /* Localizable.strings */; };
+		DAE305521FBF212600FC5AE8 /* usa.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE305511FBF1D2800FC5AE8 /* usa.png */; };
+		DAE305531FBF212900FC5AE8 /* iran.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE305501FBF1D2800FC5AE8 /* iran.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +33,9 @@
 
 /* Begin PBXFileReference section */
 		051B32ED3957CB6A954C35AC /* Pods_mtpLocaleManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mtpLocaleManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ABE04BB502962BD39D30FD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1ABE04BB502962BD39D30FD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		245F7272E52A359EEBCCF948 /* Pods-mtpLocaleManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpLocaleManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mtpLocaleManager_Example/Pods-mtpLocaleManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		45F8082ACCFC92C60BEF6116 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		45F8082ACCFC92C60BEF6116 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* mtpLocaleManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtpLocaleManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +47,17 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7D188B5321E9A49485701B29 /* Pods-mtpLocaleManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpLocaleManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-mtpLocaleManager_Example/Pods-mtpLocaleManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		97D6E9F1647D72632351A266 /* mtpLocaleManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = mtpLocaleManager.podspec; path = ../mtpLocaleManager.podspec; sourceTree = "<group>"; };
+		97D6E9F1647D72632351A266 /* mtpLocaleManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = mtpLocaleManager.podspec; path = ../mtpLocaleManager.podspec; sourceTree = "<group>"; };
 		990B964119FA66406A8D6EBC /* Pods_mtpLocaleManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mtpLocaleManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D209FC169841727CF45DB7 /* Pods-mtpLocaleManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpLocaleManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mtpLocaleManager_Tests/Pods-mtpLocaleManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C88E1793D7B0B53C4ABDE67F /* Pods-mtpLocaleManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpLocaleManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mtpLocaleManager_Tests/Pods-mtpLocaleManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DAE305321FBF14CA00FC5AE8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DAE305371FBF15EF00FC5AE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAE3053A1FBF163100FC5AE8 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Main.strings; sourceTree = "<group>"; };
+		DAE3053B1FBF163100FC5AE8 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAE3053D1FBF164A00FC5AE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		DAE305501FBF1D2800FC5AE8 /* iran.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iran.png; sourceTree = "<group>"; };
+		DAE305511FBF1D2800FC5AE8 /* usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usa.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +116,14 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				DAE305321FBF14CA00FC5AE8 /* SettingsViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				DAE305501FBF1D2800FC5AE8 /* iran.png */,
+				DAE305511FBF1D2800FC5AE8 /* usa.png */,
+				DAE305381FBF15EF00FC5AE8 /* Localizable.strings */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for mtpLocaleManager";
@@ -231,6 +246,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fa,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -249,8 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				DAE305521FBF212600FC5AE8 /* usa.png in Resources */,
+				DAE305361FBF15EF00FC5AE8 /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				DAE305531FBF212900FC5AE8 /* iran.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +391,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				DAE305331FBF14CA00FC5AE8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +418,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				607FACDA1AFB9204008FA782 /* Base */,
+				DAE3053A1FBF163100FC5AE8 /* fa */,
+				DAE3053D1FBF164A00FC5AE8 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -410,6 +432,15 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		DAE305381FBF15EF00FC5AE8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAE305371FBF15EF00FC5AE8 /* en */,
+				DAE3053B1FBF163100FC5AE8 /* fa */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -417,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -470,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
