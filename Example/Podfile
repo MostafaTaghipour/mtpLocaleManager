@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'mtpLocaleManager_Example' do
+  pod 'mtpLocaleManager', :path => '../'
+
+  target 'mtpLocaleManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
