@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'mtpLocaleManager'
   s.version          = '1.0.0'
-  s.summary          = 'mtpLocaleManager is the best choice for you if you want to change the locale at runtime or have a multi-language app'
+  s.summary          = 'A locale manager to change the locale at runtime and have a multi-language app'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-mtpLocaleManager is the best choice for you if you want to change the locale at runtime or have a multi-language app
+mtpLocaleManager is the best choice for you if you want to change the locale at runtime and have a multi-language app
                        DESC
 
   s.homepage         = 'https://github.com/mostafataghipour/mtpLocaleManager'
