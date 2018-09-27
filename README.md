@@ -43,7 +43,7 @@ XCode opens a dialog showing resources to be added for the new language. Pressin
 
 2. Any time you need to change the locale of the application using the following code
 ```swift
-LocaleManager.shared.setLocale("fa")
+LocaleManager.shared.currentLocale  = Locale(identifier: /* your desired language*/ "fa") 
 ```
 
 thats it, now run your app and enjoy it
