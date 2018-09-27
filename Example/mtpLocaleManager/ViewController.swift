@@ -19,12 +19,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         localizedLabel.text=NSLocalizedString("label_title", comment: "label")
-        self.imageview.image=UIImage(named: LocaleManager.shared.currentLocale=="fa" ? "iran.png" : "usa.png")
+         self.imageview.image="map.png".localizedImage
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+       NotificationCenter.default.addObserver(self, selector: #selector(localeDidChanged(notification:)), name: NSNotification.Name.LocaleDidChange, object: nil)
     }
 
+    
+ 
+    
+    @objc func localeDidChanged(notification:Notification)  {
+        if let locale=notification.object as? String{
+            print(locale)
+        }
+    }
 }
 

@@ -7,8 +7,9 @@
 
 mtpLocaleManger is a locale manager for iOS:
 
-- Change Locale at runtime
+- Change locale at runtime
 - Supports multiple language
+- Change locale according to system locale
 - Easy to use
 
 
@@ -27,7 +28,7 @@ mtpLocaleManager is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'mtpLocaleManager'
+    pod 'mtpLocaleManager'
 ```
 
 
@@ -42,7 +43,7 @@ XCode opens a dialog showing resources to be added for the new language. Pressin
 
 2. Any time you need to change the locale of the application using the following code
 ```swift
-LocaleManager.shared.setLocale("fa")
+    LocaleManager.shared.setLocale("fa")
 ```
 
 thats it, now run your app and enjoy it
@@ -52,15 +53,15 @@ thats it, now run your app and enjoy it
 There is a notification that fired when locale did changed
 ```swift
 override func viewDidLoad() {
-super.viewDidLoad()
-NotificationCenter.default.addObserver(self, selector: #selector(localeDidChanged(notification:)), name: NSNotification.Name.LocaleDidChange, object: nil)
+    super.viewDidLoad()
+    NotificationCenter.default.addObserver(self, selector: #selector(localeDidChanged(notification:)), name: NSNotification.Name.LocaleDidChange, object: nil)
 }
 
 
 @objc func localeDidChanged(notification:Notification)  {
-if let locale=notification.object as? String{
-print(locale)
-}
+    if let locale=notification.object as? String{
+        print(locale)
+    }
 }
 
 ```

@@ -15,10 +15,12 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C4237FFB4D37769DC810F117 /* Pods_mtpLocaleManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051B32ED3957CB6A954C35AC /* Pods_mtpLocaleManager_Tests.framework */; };
 		D1A4AD084E3A2522FD57872F /* Pods_mtpLocaleManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B964119FA66406A8D6EBC /* Pods_mtpLocaleManager_Example.framework */; };
+		DA43D37E2158184C00B51C71 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = DA43D3802158184C00B51C71 /* map.png */; };
+		DA43D38A21581A1600B51C71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA43D38921581A1600B51C71 /* Info.plist */; };
+		DA43D38B21581A2100B51C71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA43D38D21581A2100B51C71 /* InfoPlist.strings */; };
+		DA6121ED21595E9800EB8657 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6121EC21595E9800EB8657 /* AppLanguage.swift */; };
 		DAE305331FBF14CA00FC5AE8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE305321FBF14CA00FC5AE8 /* SettingsViewController.swift */; };
 		DAE305361FBF15EF00FC5AE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE305381FBF15EF00FC5AE8 /* Localizable.strings */; };
-		DAE305521FBF212600FC5AE8 /* usa.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE305511FBF1D2800FC5AE8 /* usa.png */; };
-		DAE305531FBF212900FC5AE8 /* iran.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE305501FBF1D2800FC5AE8 /* iran.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 		245F7272E52A359EEBCCF948 /* Pods-mtpLocaleManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpLocaleManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mtpLocaleManager_Example/Pods-mtpLocaleManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		45F8082ACCFC92C60BEF6116 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* mtpLocaleManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtpLocaleManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,13 +52,17 @@
 		990B964119FA66406A8D6EBC /* Pods_mtpLocaleManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mtpLocaleManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D209FC169841727CF45DB7 /* Pods-mtpLocaleManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpLocaleManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mtpLocaleManager_Tests/Pods-mtpLocaleManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C88E1793D7B0B53C4ABDE67F /* Pods-mtpLocaleManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpLocaleManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mtpLocaleManager_Tests/Pods-mtpLocaleManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DA43D37C2158163300B51C71 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		DA43D37D2158163300B51C71 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA43D3822158184E00B51C71 /* ar */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ar; path = ar.lproj/map.png; sourceTree = "<group>"; };
+		DA43D3832158185B00B51C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/map.png; sourceTree = "<group>"; };
+		DA43D38921581A1600B51C71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA43D38C21581A2100B51C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA43D38E21581A2300B51C71 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA6121EC21595E9800EB8657 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		DAE305321FBF14CA00FC5AE8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DAE305371FBF15EF00FC5AE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DAE3053A1FBF163100FC5AE8 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Main.strings; sourceTree = "<group>"; };
-		DAE3053B1FBF163100FC5AE8 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAE3053D1FBF164A00FC5AE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		DAE305501FBF1D2800FC5AE8 /* iran.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iran.png; sourceTree = "<group>"; };
-		DAE305511FBF1D2800FC5AE8 /* usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usa.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +122,11 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				DAE305321FBF14CA00FC5AE8 /* SettingsViewController.swift */,
+				DA6121EC21595E9800EB8657 /* AppLanguage.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				DAE305501FBF1D2800FC5AE8 /* iran.png */,
-				DAE305511FBF1D2800FC5AE8 /* usa.png */,
+				DA43D3802158184C00B51C71 /* map.png */,
 				DAE305381FBF15EF00FC5AE8 /* Localizable.strings */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -133,7 +138,8 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
+				DA43D38921581A1600B51C71 /* Info.plist */,
+				DA43D38D21581A2100B51C71 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,12 +247,12 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "mtpLocaleManager" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				fa,
+				ar,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -265,11 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				DAE305521FBF212600FC5AE8 /* usa.png in Resources */,
+				DA43D38B21581A2100B51C71 /* InfoPlist.strings in Resources */,
+				DA43D37E2158184C00B51C71 /* map.png in Resources */,
 				DAE305361FBF15EF00FC5AE8 /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				DAE305531FBF212900FC5AE8 /* iran.png in Resources */,
+				DA43D38A21581A1600B51C71 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				DA6121ED21595E9800EB8657 /* AppLanguage.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				DAE305331FBF14CA00FC5AE8 /* SettingsViewController.swift in Sources */,
 			);
@@ -418,8 +426,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				607FACDA1AFB9204008FA782 /* Base */,
-				DAE3053A1FBF163100FC5AE8 /* fa */,
 				DAE3053D1FBF164A00FC5AE8 /* en */,
+				DA43D37C2158163300B51C71 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -432,11 +440,29 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		DA43D3802158184C00B51C71 /* map.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA43D3822158184E00B51C71 /* ar */,
+				DA43D3832158185B00B51C71 /* en */,
+			);
+			name = map.png;
+			sourceTree = "<group>";
+		};
+		DA43D38D21581A2100B51C71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA43D38C21581A2100B51C71 /* en */,
+				DA43D38E21581A2300B51C71 /* ar */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DAE305381FBF15EF00FC5AE8 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DAE305371FBF15EF00FC5AE8 /* en */,
-				DAE3053B1FBF163100FC5AE8 /* fa */,
+				DA43D37D2158163300B51C71 /* ar */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

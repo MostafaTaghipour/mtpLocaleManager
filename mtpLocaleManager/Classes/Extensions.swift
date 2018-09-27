@@ -17,10 +17,28 @@ extension NSNotification.Name{
 //MARK:- Extensions
 //UIApplication isRTL property
 extension UIApplication {
-    class var isRTL:Bool{
+   public class var isRTL:Bool{
         get{
             return LocaleManager.isLanguageRTL()
         }
+    }
+}
+
+//get localized image runtime
+extension String {
+    public var localizedImage: UIImage? {
+        return localizedImage()
+            ?? localizedImage(type: ".png")
+            ?? localizedImage(type: ".jpg")
+            ?? localizedImage(type: ".jpeg")
+            ?? UIImage(named: self)
+    }
+    
+    private func localizedImage(type: String = "") -> UIImage? {
+        guard let imagePath = Bundle.main.localizedBundle?.path(forResource: self, ofType: type) else {
+            return nil
+        }
+        return UIImage(contentsOfFile: imagePath)
     }
 }
 

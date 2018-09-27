@@ -52,7 +52,7 @@ fileprivate extension DispatchQueue {
         static var b = "LocalizedMainBundle"
     }
     
-    fileprivate var localizedBundle: Bundle? {
+    internal var localizedBundle: Bundle? {
         get {
             //    warning: Make sure this object you are fetching really exists
             return objc_getAssociatedObject(self, &AssociatedKeys.b) as? Bundle

@@ -38,4 +38,13 @@ fileprivate let APPLE_LANGUAGE_KEY = "AppleLanguages"
         userdef.synchronize()
     }
     
+    
+    class func getSystemLanguage() -> String?{
+        return Locale.current.languageCode
+    }
+    
+    class func resetAppleLanguage() {
+        let userdef = UserDefaults.standard
+         userdef.removeObject(forKey: APPLE_LANGUAGE_KEY)
+    }
 }
