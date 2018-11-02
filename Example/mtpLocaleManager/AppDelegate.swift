@@ -14,25 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-   
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-       
-//        if let path = Bundle.main.path(forResource: "Info", ofType: "plist"),
-//            let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject],
-//            let value = dict["CFBundleDevelopmentRegion"] as? String{
-//            LocaleManager.shared.currentLocale = Locale(identifier: value)
-//        }
-//        
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let navigationController = mainStoryboard.instantiateViewController(withIdentifier: "mainNavigationController") as! UINavigationController
-//        window?.rootViewController = navigationController
-//        window?.makeKeyAndVisible()
-        
-        return true
+////        if let path = Bundle.main.path(forResource: "Info", ofType: "plist"),
+////            let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject],
+////            let value = dict["CFBundleDevelopmentRegion"] as? String{
+////            LocaleManager.shared.currentLocale = Locale(identifier: value)
+////        }
+////
+////        window = UIWindow(frame: UIScreen.main.bounds)
+////        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+////        let navigationController = mainStoryboard.instantiateViewController(withIdentifier: "mainNavigationController") as! UINavigationController
+////        window?.rootViewController = navigationController
+////        window?.makeKeyAndVisible()
+//
+       return true
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

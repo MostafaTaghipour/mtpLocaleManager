@@ -16,7 +16,6 @@
 		C4237FFB4D37769DC810F117 /* Pods_mtpLocaleManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051B32ED3957CB6A954C35AC /* Pods_mtpLocaleManager_Tests.framework */; };
 		D1A4AD084E3A2522FD57872F /* Pods_mtpLocaleManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B964119FA66406A8D6EBC /* Pods_mtpLocaleManager_Example.framework */; };
 		DA43D37E2158184C00B51C71 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = DA43D3802158184C00B51C71 /* map.png */; };
-		DA43D38A21581A1600B51C71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA43D38921581A1600B51C71 /* Info.plist */; };
 		DA43D38B21581A2100B51C71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA43D38D21581A2100B51C71 /* InfoPlist.strings */; };
 		DA6121ED21595E9800EB8657 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6121EC21595E9800EB8657 /* AppLanguage.swift */; };
 		DAE305331FBF14CA00FC5AE8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE305321FBF14CA00FC5AE8 /* SettingsViewController.swift */; };
@@ -231,7 +230,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -276,7 +275,6 @@
 				DAE305361FBF15EF00FC5AE8 /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				DA43D38A21581A1600B51C71 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,12 +481,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -537,12 +537,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -582,7 +584,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -597,7 +599,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
