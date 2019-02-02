@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/mtpLocaleManager.svg?style=flat)](http://cocoapods.org/pods/mtpLocaleManager)
 [![Platform](https://img.shields.io/cocoapods/p/mtpLocaleManager.svg?style=flat)](http://cocoapods.org/pods/mtpLocaleManager)
 
+## [Android version is here](https://github.com/MostafaTaghipour/LocaleManager)
+
 mtpLocaleManger is a locale manager for iOS:
 
 - Change locale at runtime
