@@ -11,7 +11,7 @@ import mtpLocaleManager
 
 class SettingsViewController: UIViewController {
     
-    let locale_key = "locale_key"
+   
     
     @IBOutlet weak var langPicker: UIPickerView!
     
@@ -31,13 +31,13 @@ class SettingsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(localeDidChanged(notification:)), name: NSNotification.Name.LocaleDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(localeDidChanged(notification:)), name: NSNotification.Name.AppLocaleDidChange, object: nil)
     }
     
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.LocaleDidChange, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.AppLocaleDidChange, object: nil)
     }
     
     @objc func localeDidChanged(notification:Notification)  {
@@ -72,10 +72,8 @@ extension SettingsViewController:UIPickerViewDelegate,UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let value = AppLanguage.all[row]
         
-        if value == .System{
-            return value.title
-        }
-        return LocaleManager.displayName(isoLangCode: value.code)
+        return value.title
+        //return LocaleManager.displayName(isoLangCode: value.code)
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

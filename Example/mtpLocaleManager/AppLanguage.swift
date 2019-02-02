@@ -17,11 +17,11 @@ enum AppLanguage:String{
     var title:String{
         switch self {
         case .System:
-            return "System (default)"
+            return NSLocalizedString("system_language", comment: "label")
         case .English:
-            return "English"
+            return NSLocalizedString("english", comment: "label")
         case .Arabic:
-            return "Arabic"
+            return NSLocalizedString("arabic", comment: "label")
         }
     }
     

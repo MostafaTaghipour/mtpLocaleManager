@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-       NotificationCenter.default.addObserver(self, selector: #selector(localeDidChanged(notification:)), name: NSNotification.Name.LocaleDidChange, object: nil)
+       NotificationCenter.default.addObserver(self, selector: #selector(localeDidChanged(notification:)), name: NSNotification.Name.AppLocaleDidChange, object: nil)
     }
 
     

@@ -27,7 +27,7 @@ public class LocaleManager {
             enforceDirection(lng: _currentLocale)
             DoTheMagic()
             
-            NotificationCenter.default.post(name: NSNotification.Name.LocaleDidChange, object: _currentLocale)
+            NotificationCenter.default.post(name: NSNotification.Name.AppLocaleDidChange, object: _currentLocale)
         }
     }
     
@@ -49,16 +49,29 @@ public class LocaleManager {
 
 
 extension LocaleManager{
-    public class func isLanguageRTL(isoLangCode: String=LocaleManager.shared.currentLocale.identifier) -> Bool {
+    
+    public  var isLanguageRTL : Bool {
+        return LocaleManager.isLanguageRTL(isoLangCode: currentLocale.identifier)
+    }
+    
+    public  func displayName(locale: Locale)->String?{
+        return LocaleManager.displayName(isoLangCode: currentLocale.identifier)
+    }
+    
+    public  func country(locale: Locale)->String?{
+        return LocaleManager.country(isoLangCode: currentLocale.identifier)
+    }
+    
+    public class func isLanguageRTL(isoLangCode: String) -> Bool {
         return NSLocale.characterDirection(forLanguage: isoLangCode) == .rightToLeft
     }
     
-    public class func displayName(isoLangCode: String=LocaleManager.shared.currentLocale.identifier)->String?{
+    public class func displayName(isoLangCode: String)->String?{
         let locale = NSLocale(localeIdentifier: isoLangCode)
         return locale.displayName(forKey: NSLocale.Key.identifier, value: locale.localeIdentifier)
     }
     
-    public class func country(isoLangCode: String=LocaleManager.shared.currentLocale.identifier)->String?{
+    public class func country(isoLangCode: String)->String?{
         if let name=displayName(isoLangCode: isoLangCode){
             return (name.range(of: "(")?.upperBound).flatMap { sInd in
                 (name.range(of:")", range: sInd..<name.endIndex)?.lowerBound).map { eInd in
@@ -68,8 +81,6 @@ extension LocaleManager{
         }
         return nil
     }
-    
-
     
     public class func isLanguageRTL(locale: Locale) -> Bool {
         return isLanguageRTL(isoLangCode: locale.identifier)
@@ -94,7 +105,6 @@ extension LocaleManager{
             return NSLocale.availableLocaleIdentifiers
         }
     }
-    
     
 }
 

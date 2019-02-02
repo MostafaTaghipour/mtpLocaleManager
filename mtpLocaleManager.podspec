@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mtpLocaleManager'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A locale manager to change the locale at runtime and have a multi-language app'
 
 # This description is used to generate tags and improve search results.

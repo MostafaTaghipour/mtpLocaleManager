@@ -11,7 +11,7 @@ import UIKit
 
 
 extension NSNotification.Name{
-    public  static let LocaleDidChange = Notification.Name("localeChanged")
+    public  static let AppLocaleDidChange = Notification.Name("localeChanged")
 }
 
 //MARK:- Extensions
@@ -19,7 +19,7 @@ extension NSNotification.Name{
 extension UIApplication {
    public class var isRTL:Bool{
         get{
-            return LocaleManager.isLanguageRTL()
+            return LocaleManager.shared.isLanguageRTL
         }
     }
 }
