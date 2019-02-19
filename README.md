@@ -15,7 +15,7 @@ mtpLocaleManger is a locale manager for iOS:
 - Easy to use
 
 
-![multi-language app](https://raw.githubusercontent.com/mtpLocaleManager/mtpFontManager/master/screenshots/1.gif)
+![multi-language app](https://raw.githubusercontent.com/mtpLocaleManager/master/screenshots/1.gif)
 
 
 ## Requirements
