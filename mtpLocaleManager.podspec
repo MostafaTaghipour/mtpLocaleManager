@@ -28,7 +28,7 @@ mtpLocaleManager is the best choice for you if you want to change the locale at 
   s.source           = { :git => 'https://github.com/mostafataghipour/mtpLocaleManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'mtpLocaleManager/Classes/**/*'
   
