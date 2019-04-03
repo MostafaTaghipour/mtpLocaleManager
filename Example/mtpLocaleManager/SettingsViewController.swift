@@ -23,7 +23,7 @@ class SettingsViewController: UIViewController {
         langPicker.delegate=self
         
         let savedLang = AppLanguage(rawValue: UserDefaults.standard.string(forKey: locale_key) ?? AppLanguage.System.rawValue)
-        langPicker.selectRow(AppLanguage.all.index(of: savedLang!)!, inComponent: 0, animated: false)
+        langPicker.selectRow(AppLanguage.all.firstIndex(of: savedLang!)!, inComponent: 0, animated: false)
         
         
     }
